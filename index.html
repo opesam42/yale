@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Yale School of Art</title>
+
+
+    <!-- <link rel="stylesheet" href="styles/w3.css"> -->
+    <link rel="stylesheet" href="styles/tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.0/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <!-- <link rel="stylesheet" href="styles/main.css"> -->
+</head>
+<body class="flex flex-col items-center gap-16 w-full">
+    <header class="flex pb-2 flex-col justify-center items-center gap-4 w-full shadow-sm">
+        <div class="sec-header hidden md:flex justify-between items-center self-stretch py-2 px-12 bg-shade_primary text-shade_white">
+            <div>Yale University</div>
+            <nav class="flex items-center gap-6 text-sm">
+                <div><a href="#" class="hover:text-secondary">CALENDAR</a></div>
+                <div><a href="#" class="hover:text-secondary">GIVE</a></div>
+                <div><a href="#" class="hover:text-secondary">NEWS</a></div>
+                <div><a href="#" class="hover:text-secondary">DIRECTORY</a></div>
+            </nav>
+        </div>
+
+        <div class="main-header flex flex-col gap-4 self-stretch px-2 md:px-12">
+            <div class="logo-search flex justify-between items-center self-stretch p-2">
+                <div class="logo flex gap-1 items-center md:items-end">
+                    <div><img src="assets/logo.svg" width="40px" class="md:w-16"></div>
+                    <div class="text-primary text-md md:text-h2" style="font-weight: 700;">Yale School of Arts</div>
+                </div>
+                <div id="menu-toggle" class="md:hidden"><i class="fa fa-bars fa-2x"></i></div>
+                <div class="w-56 hidden md:flex items-center rounded-lg text-gray-900 text-sm gap-2 border-2 border-secondary"><i class="fa fa-search fa-lg text-gray-600 block px-3"></i><input class="block pr-5 py-2 focus:outline-none w-full" type="search" placeholder="Search"></div>
+            </div>
+            <nav id="main-nav" class="hidden md:block">
+                <ul class="text-white md:text-primary md:font-semibold flex flex-col md:flex-row items-stretch text-lg md:text-sm bg-primary md:bg-inherit max-w-[1344px] justify-between md:items-center self-stretch *:block divide-y md:divide-y-0 divide-gray-50">
+                    <li class="bg-white md:hidden">
+                        <div class="w-full flex text-gray-900 text-md items-stretch self-center border-2 focus:border-4"><input class="block flex-grow focus:outline-none p-2" type="search" placeholder="Search"><button class="bg-primary p-2 hover:bg-blue-900" value="search"><i class="fa fa-search fa-lg text-white"></i></button></div>
+                    </li>
+                    <li><a href="#" class="block hover:text-secondary hover:bg-blue-900 md:hover:bg-transparent p-4 md:p-0 transition-all uppercase md:normal-case font-semibold hover:px-6 md:hover:px-0">Study with us</a></li>
+                    <li><a href="#" class="block hover:text-secondary hover:bg-blue-900 md:hover:bg-transparent p-4 md:p-0 transition-all uppercase md:normal-case font-semibold hover:px-6 md:hover:px-0">About the school</a></li>
+                    <li><a href="#" class="block hover:text-secondary hover:bg-blue-900 md:hover:bg-transparent p-4 md:p-0 transition-all uppercase md:normal-case font-semibold hover:px-6 md:hover:px-0">Employability</a></li>
+                    <li><a href="#" class="block hover:text-secondary hover:bg-blue-900 md:hover:bg-transparent p-4 md:p-0 transition-all uppercase md:normal-case font-semibold hover:px-6 md:hover:px-0">Exhibition</a></li>
+                    <li><a href="#" class="block hover:text-secondary hover:bg-blue-900 md:hover:bg-transparent p-4 md:p-0 transition-all uppercase md:normal-case font-semibold hover:px-6 md:hover:px-0">Publication</a></li>
+                    <li><a href="#" class="block hover:text-secondary hover:bg-blue-900 md:hover:bg-transparent p-4 md:p-0 transition-all uppercase md:normal-case font-semibold hover:px-6 md:hover:px-0">News</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="w-full flex flex-col gap-32">
+        <section class="hero-section flex flex-col md:flex-row self-stretch w-full bg-secondary">
+            <div class="bg-norepeat bg-cover bg-top w-auto h-72 md:h-auto md:w-1/2" style="background-image: url(assets/students-in-yale.jpg);"></div>
+            <!-- <div class="w-1/2 overflow-hidden">
+                <img src="assets/students-in-yale.jpg" alt="students-in-yale" class="w-full">
+            </div> -->
+            <div class="p-4 md:p-8 md:w-1/2">
+                <h1 class="text-primary text-h1_m  leading-tight font-bold mb-4">YSA: Where Art Meets Collaboration</h1>
+                <p class="font-medium text-md mb-12">Students from around the world bring diverse perspectives that enrich Yale's artistic community. Through collaboration and interdisciplinary projects, they inspire innovation and artistic breakthroughs.</p>
+                <a href="#" class="cta-1 flex w-fit p-4 text-center text-white text-sm md:text-md bg-accent hover:bg-primary hover:bg-opacity-90 hover:transition-all">Checkout the Student Community</a>
+            </div>
+        </section>
+
+        <!-- <section class="banner flex flex-col gap-8 md:flex-row md:justify-between md:gap-0 items-center px-12 text-center">
+            <a href="#" class="icon-btn">
+                <div><img src="assets/solar_calendar-bold.svg"></div>
+                <div>Open Days and Tours</div>
+            </a>
+            <a href="#" class="icon-btn">
+                <div><img src="assets/Vector.svg"> </div>
+                <div>Chat with a Student</div>
+            </a>
+            <a href="#" class="icon-btn">
+                <div><img src="assets/Vector(1).svg"></div>
+                <div>Why Study with Us?</div>
+            </a>
+            <a href="#" class="icon-btn">
+                <div><img src="assets/Vector(2).svg"></div>
+                <div>Get a Prospectus</div>
+            </a>
+        </section> -->
+
+        <section class="news-section flex flex-col items-center gap-4 bg-shade_gray py-4">
+        <h2 class="text-h1_m md:text-h1 font-semibold text-primary">News</h2>
+            <div class="flex justify-center gap-8 items-centers self-stretch p-4 md:p-12 flex-wrap">
+                <div class="content">
+                    <div>
+                        <div class="image" style="background-image: url(assets/yale-graduation.jpg);"></div>
+                        <div class="descr">
+                            <div class="title">Congratulations to The Class of 2024</div>
+                            <div class="line-clamp-4">The Yale School of Art celebrates its graduating class of  2024 with a commencement address by Los Angeles-based artist and  educator Patty Chang on Monday, May 20, 2024.</div>
+                            <div class="cta-3"><a href="#">Read more</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div>
+                        <div class="image" style="background-image: url(assets/Danelle-De-Jesus-In-Progress.jpg);"></div>
+                        <div class="descr">
+                            <div class="title">Painting/Printmaking collaboration brings new murals to La Casa</div>
+                            <div class="line-clamp-4">Yale's La Casa unveils two new murals celebrating Indigenous and Puerto Rican cultures. Join the public reception on April 24 to meet the artists, view the murals, and enjoy refreshments.</div>
+                            <div class="cta-3"><a href="#">Read more</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div>
+                        <div class="image" style="background-image: url(assets/lukman-photo.jpg);"></div>
+                        <div class="descr">
+                            <div class="title">Yale School of Art Hosts Yoruba Sculptor Lukman Àlàdé Fákaye</div>
+                            <div class="line-clamp-4">This fall, Yorùbá traditional sculptor Lukman Àlàdé Fákaye led a four-day carving demonstration at Yale, showcasing his craft and engaging with the community. .</div>
+                            <div class="cta-3"><a href="#">Read more</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="cta-2 block bg-accent text-white px-2 py-4 font-medium text-sm md:text-md hover:bg-primary hover:transition-all hover:duration-500">Read our latest news</a>
+        </section>
+
+        <section class="course-section flex flex-col gap-8">
+            <div><h2 class="bg-secondary text-h1_m md:text-h1 text-primary text-center md:text-left font-semibold p-4">Explore our courses</h2></div>
+            <div class="flex flex-wrap justify-center items-start gap-16 px-4 md:px-16">
+                <a href="#">
+                    <div class="content">
+                        <div>
+                            <div class="image" style="background-image: url(assets/pics-at-fine-art.jpg);"></div>
+                            <div class="descr">
+                                <div class="title">Fine Art</div>
+                                <div class="line-clamp-4">Equip yourself with the skills and experience to succeed in the creative economy. Fulfil your creative potential and ambitions in Fine Art.</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+        
+                <a href="#">
+                    <div class="content">
+                        <div>
+                            <div class="image" style="background-image: url(assets/graphics-lab.jpg);"></div>
+                            <div class="descr">
+                                <div class="title">Graphic Design</div>
+                                <div class="line-clamp-4">Explore the power of visual communication. Dive into typography, motion graphics, and interactive design to create compelling, impactful visuals.</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+        
+                <a href="#">
+                    <div class="content">
+                        <div>
+                            <div class="image" style="background-image: url(assets/painting.jpg);"></div>
+                            <div class="descr">
+                                <div class="title">Painting/Printmaking</div>
+                                <div class="line-clamp-4">Master the craft of expression. From figure drawing to experimental printmaking, explore techniques that bring your creative vision to life.</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+        
+                <a href="#">
+                    <div class="content">
+                        <div>
+                            <div class="image" style="background-image: url(assets/photography.jpg);"></div>
+                            <div class="descr">
+                                <div class="title">Photography</div>
+                                <div class="line-clamp-4">Capture the world through your lens. Develop your unique visual voice in both analog and digital photography, pushing the boundaries of the medium.</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+        
+                <a href="#">
+                    <div class="content">
+                        <div>
+                            <div class="image" style="background-image: url(assets/sculpture-camel.jpg);"></div>
+                            <div class="descr">
+                                <div class="title">Sculpture</div>
+                                <div class="line-clamp-4">Transform ideas into physical forms. Learn the art of sculpting with diverse materials, from wood to metal, and explore contemporary themes.</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+        
+                <a href="#">
+                    <div class="content">
+                        <div>
+                            <div class="image" style="background-image: url(assets/camera-stud.jpg);"></div>
+                            <div class="descr">
+                                <div class="title">Film Making</div>
+                                <div class="line-clamp-4">Bring stories to life through motion. Study documentary filmmaking, animation, and digital video to craft engaging narratives that resonate.</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        
+
+        <section class="lg:mx-[190px] bg-shade_gray p-8 md:p-0 md:pr-4  flex flex-col md:flex-row justify-center items-center gap-8">
+            <div class="bg-no-repeat bg-cover bg-center h-[530px] w-full max-w-80 md:max-w-none md:w-1/3" style="background-image: url(assets/postgrad-research.jpg);"></div>
+            <div class="md:w-2/3">
+                <h2 class="text-h1_m md:text-h1 text-primary font-semibold">Research</h2>
+                <p class="text-justify">Research at Yale School of Art explores new artistic frontiers, merging creativity with critical inquiry. Our faculty and students engage in diverse practices from digital technologies to social activism  norms and contributing to cultural conversations. Supported by Yale’s vast resources, our research drives innovation and deepens understanding of the world.</p>
+                <div class="cta-3 mt-6 text-right text-accent hover:text-primary hover:transition-all underline font-semibold"><a>Learn more about research</a></div>
+            </div>
+        </section>
+
+        <section class="event-section flex flex-col gap-8">
+            <div><h2 class="bg-secondary text-h1_m md:text-h1 text-center md:text-left text-primary font-semibold p-4">Upcoming Events</h2></div>
+            <div class="flex flex-wrap justify-center items-start gap-8 px-4">
+                <div class="content">
+                    <div class="image" style="background-image: url(assets/orientation.jpg);"></div>
+                    <div class="descr">    
+                        <div class="title">Orientation for new and continuing students</div>
+                        <div class="date">19TH-23RD AUG</div>
+                        <div class="time">6:00PM - 9:00PM</div>
+                        <div class="location">1156 Chapel Street, New Haven, Connecticut.</div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="image" style="background-image: url(assets/meeting-faculty.jpg);"></div>
+                    <div class="descr"> 
+                        <div class="title">Faculty Orientation</div>
+                        <div class="date">26TH AUG</div>
+                        <div class="time">9:00AM - 11:00AM </div>
+                        <div class="location">1156 Chapel Street, New Haven, Connecticut.</div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="image" style="background-image: url(assets/party-yale.jpg);"></div>
+                    <div class="descr"> 
+                        <div class="title">Dean's Welcome Dinner</div>
+                        <div class="date">26TH AUG</div>
+                        <div class="time">6:00PM - 9:00PM</div>
+                        <div class="location">1156 Chapel Street, New Haven, Connecticut.</div>
+                    </div>
+                </div>
+            </div>
+            <a class="cta-1 py-4 px-2 bg-accent hover:bg-primary w-fit self-center text-shade_white">Explore upcoming events</a>
+        </section>
+
+    </main>
+
+    <footer class="flex flex-col gap-16 pt-9 bg-shade_primary text-shade_white w-full justify-between items-start">
+        <div class="flex flex-col md:flex-row px-9 justify-between w-full md:flex-wrap gap-6">
+            <nav class="flex flex-col sm:flex-row gap-6 md:gap-12">
+                <div class="link-sect">
+                    <div>Faculties and Dept.</div>
+                    <ul>
+                        <li><a href="#" class="hover:underline">Science and Engineering</a></li>
+                        <li><a href="#" class="hover:underline">Health and Medicine</a></li>
+                        <li><a href="#" class="hover:underline">Arts and Social Sciences</a></li>
+                        <li><a href="#" class="hover:underline">Business and Management Sciences</a></li>
+                        <li><a href="#" class="hover:underline">Law</a></li>
+                    </ul>
+                </div>
+
+                <div class="link-sect">
+                    <div>Quick Links</div>
+                    <ul>
+                        <li><a href="#" class="hover:underline">About the School</a></li>
+                        <li><a href="#" class="hover:underline">Apply</a></li>
+                        <li><a href="#" class="hover:underline">Exhibitions</a></li>
+                        <li><a href="#" class="hover:underline">Publications</a></li>
+                        <li><a href="#" class="hover:underline">News</a></li>
+                    </ul>
+                </div>
+
+                <div class="link-sect">
+                    <div>Connect</div>
+                    <ul>
+                        <li><a href="#" class="hover:underline">Twitter X</a></li>
+                        <li><a href="#" class="hover:underline">Facebook</a></li>
+                        <li><a href="#" class="hover:underline">Instagram</a></li>
+                        <li><a href="#" class="hover:underline">YouTube</a></li>
+                        <li><a href="#" class="hover:underline">LinkedIn</a></li>
+                        <li><a href="#" class="hover:underline">TikTok</a></li>
+                    </ul>
+                </div>
+
+                <div class="link-sect">
+                    <div>Contact Us</div>
+                    <div class="leading-7">1156 Chapel Street, POB 208339,New Haven, Connecticut, 06520-8339 </div>
+                </div>
+            </nav>
+            <form class="bg-shade_white text-primary flex flex-col gap-4 py-8 px-4 max-w-[340px] rounded-3xl justify-center items-center text-sm">
+                <div class="text-center">
+                    <h3 class="text-md font-bold">Subscribe to our Newsletter</h3>
+                    <p>Get news from the Yale School of Art in your inbox</p>
+                </div>
+                <input class="border-2 border-primary block self-stretch h-10 rounded-xl text-shade_gray p-2 focus:outline-none" type="email" name="email" placeholder="Enter your email">
+                <button class="bg-primary text-shade_white block self-stretch h-10 rounded-xl font-bold hover:bg-blue-900" type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <div class="py-6 text-center text-sm self-stretch bg-primary w3-full">
+            <a href="#" class="hover:underline">Accessibility </a> | <a href="#" class="hover:underline"> Privacy and Cookies </a> | <a href="#" class="hover:underline"> Disclaimer </a> | <a href="#" class="hover:underline"> Freedom of Information </a> | <a href="#" class="hover:underline"> Legal Notice </a> | <a href="#" class="hover:underline"> Modern Slavery Statement </a> © Yales University 2024. All right Reserved
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
