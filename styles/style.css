@@ -55,7 +55,7 @@ input[type="search"]::-webkit-search-decoration {
         @apply shadow-md flex flex-col p-8 justify-center items-center;
     }
     .news-section .content{
-        @apply flex flex-col w-full max-w-[380px] pb-6 gap-6 bg-shade_white;
+        @apply flex flex-col w-full max-w-[380px] pb-6 gap-6 bg-shade_white hover:grayscale transition-all delay-100 ease-in-out;
     }
     .news-section .content .image, .course-section .content .image, .event-section .image{
         @apply h-[200px] w-full bg-no-repeat bg-cover bg-center border-b-4 border-secondary;
@@ -72,7 +72,7 @@ input[type="search"]::-webkit-search-decoration {
 
     /* courses */
     .course-section .content{
-        @apply bg-shade_gray flex flex-col w-full max-w-[380px] gap-6;
+        @apply bg-shade_gray flex flex-col w-full max-w-[380px] gap-6 hover:grayscale transition-all delay-100 ease-in-out;
     }
     .course-section .content .title{
         @apply text-left self-start;
