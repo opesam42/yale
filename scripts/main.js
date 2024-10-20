@@ -3,6 +3,7 @@ main_nav = document.getElementById('main-nav');
 
 hambuger.addEventListener('click', function(){
     main_nav.classList.toggle('hidden');
-    
-    console.log('yeah');
+
+    hambuger.querySelector('i').classList.toggle('fa-bars');
+    hambuger.querySelector('i').classList.toggle('fa-times')
 })
