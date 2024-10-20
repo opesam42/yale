@@ -573,15 +573,6 @@ video {
   gap: 1.5rem;
   background-color: var(--shade-white);
   padding-bottom: 1.5rem;
-  transition-property: all;
-  transition-duration: 150ms;
-  transition-delay: 100ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.news-section .content:hover {
-  --tw-grayscale: grayscale(100%);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .news-section .content .image, .course-section .content .image, .event-section .image {
@@ -646,6 +637,7 @@ video {
 /* event section */
 
 .event-section .content {
+  height: 516px;
   width: 100%;
   max-width: 380px;
   background-color: var(--shade-gray);
@@ -734,8 +726,8 @@ footer .link-sect div:first-child {
   margin-bottom: 3rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .mt-6 {
@@ -773,6 +765,10 @@ footer .link-sect div:first-child {
   height: 530px;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -796,10 +792,6 @@ footer .link-sect div:first-child {
 
 .max-w-80 {
   max-width: 20rem;
-}
-
-.max-w-\[1344px\] {
-  max-width: 1344px;
 }
 
 .max-w-\[340px\] {
@@ -850,8 +842,8 @@ footer .link-sect div:first-child {
   gap: 0.5rem;
 }
 
-.gap-32 {
-  gap: 8rem;
+.gap-24 {
+  gap: 6rem;
 }
 
 .gap-4 {
@@ -883,6 +875,10 @@ footer .link-sect div:first-child {
 
 .self-stretch {
   align-self: stretch;
+}
+
+.justify-self-center {
+  justify-self: center;
 }
 
 .overflow-hidden {
@@ -940,6 +936,11 @@ footer .link-sect div:first-child {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-yellow-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
 
 .bg-cover {
@@ -1017,6 +1018,10 @@ footer .link-sect div:first-child {
 
 .pb-2 {
   padding-bottom: 0.5rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
 }
 
 .pr-5 {
@@ -1128,7 +1133,7 @@ footer .link-sect div:first-child {
 
 :root{
   --primary-color: rgba(0, 84, 141, 1);
-  --secondary-color: rgba(255, 165, 0, 1);
+  --secondary-color: rgb(255, 170, 0);
   --accent-color: #EC242C;
   --text-color: #18191B;
   --shade-white: rgba(255, 255, 255, 1);
@@ -1222,6 +1227,10 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 @media (min-width: 640px) {
+  .sm\:flex {
+    display: flex;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -1258,6 +1267,14 @@ input[type="search"]::-webkit-search-decoration {
 
   .md\:w-2\/3 {
     width: 66.666667%;
+  }
+
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:max-w-\[1000px\] {
+    max-width: 1000px;
   }
 
   .md\:max-w-none {
@@ -1304,10 +1321,6 @@ input[type="search"]::-webkit-search-decoration {
 
   .md\:p-0 {
     padding: 0px;
-  }
-
-  .md\:p-12 {
-    padding: 3rem;
   }
 
   .md\:p-8 {

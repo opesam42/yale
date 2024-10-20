@@ -19,9 +19,9 @@
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     <!-- <link rel="stylesheet" href="styles/main.css"> -->
 </head>
-<body class="flex flex-col items-center gap-16 w-full">
+<body class="flex flex-col items-center gap-24 w-full">
     <header class="flex pb-2 flex-col justify-center items-center gap-4 w-full shadow-sm">
-        <div class="sec-header hidden md:flex justify-between items-center self-stretch py-2 px-12 bg-shade_primary text-shade_white">
+        <div class="sec-header hidden sm:flex justify-between items-center self-stretch py-2 px-12 bg-shade_primary text-shade_white">
             <div>Yale University</div>
             <nav class="flex items-center gap-6 text-sm">
                 <div><a href="#" class="hover:text-secondary">CALENDAR</a></div>
@@ -38,10 +38,13 @@
                     <div class="text-primary text-md md:text-h2" style="font-weight: 700;">Yale School of Arts</div>
                 </div>
                 <div id="menu-toggle" class="md:hidden"><i class="fa fa-bars fa-2x"></i></div>
-                <div class="w-56 hidden md:flex items-center rounded-lg text-gray-900 text-sm gap-2 border-2 border-secondary"><i class="fa fa-search fa-lg text-gray-600 block px-3"></i><input class="block pr-5 py-2 focus:outline-none w-full" type="search" placeholder="Search"></div>
+
+                <div class="hidden md:flex border-2 text-gray-900 text-md items-center self-center focus:border-4"><input class="block flex-grow focus:outline-none p-2" type="search" placeholder="Search"><button class="bg-primary p-2 h-full block hover:bg-blue-900" value="search"><i class="fa fa-search fa-lg text-white"></i></button></div>
+
+                <!-- <div class="w-56 hidden md:flex items-center rounded-lg text-gray-900 text-sm gap-2 border-2 border-secondary"><i class="fa fa-search fa-lg text-gray-600 block px-3"></i><input class="block pr-5 py-2 focus:outline-none w-full" type="search" placeholder="Search"></div> -->
             </div>
-            <nav id="main-nav" class="hidden md:block">
-                <ul class="text-white md:text-primary md:font-semibold flex flex-col md:flex-row items-stretch text-lg md:text-sm bg-primary md:bg-inherit max-w-[1344px] justify-between md:items-center self-stretch *:block divide-y md:divide-y-0 divide-gray-50">
+            <nav id="main-nav" class="hidden w-full md:max-w-[1000px] md:flex md:items-center self-center md:w-full">
+                <ul class="w-full  text-white md:text-primary md:font-semibold flex flex-col md:flex-row items-stretch text-lg md:text-sm bg-primary md:bg-inherit  justify-between md:items-center self-stretch *:block divide-y md:divide-y-0 divide-gray-50">
                     <li class="bg-white md:hidden">
                         <div class="w-full flex text-gray-900 text-md items-stretch self-center border-2 focus:border-4"><input class="block flex-grow focus:outline-none p-2" type="search" placeholder="Search"><button class="bg-primary p-2 hover:bg-blue-900" value="search"><i class="fa fa-search fa-lg text-white"></i></button></div>
                     </li>
@@ -56,14 +59,14 @@
         </div>
     </header>
 
-    <main class="w-full flex flex-col gap-32">
-        <section class="hero-section flex flex-col md:flex-row self-stretch w-full bg-secondary">
+    <main class="w-full flex flex-col gap-24">
+        <section class="hero-section flex flex-col md:flex-row self-stretch w-full bg-yellow-400">
             <div class="bg-norepeat bg-cover bg-top w-auto h-72 md:h-auto md:w-1/2" style="background-image: url(assets/students-in-yale.jpg);"></div>
             <!-- <div class="w-1/2 overflow-hidden">
                 <img src="assets/students-in-yale.jpg" alt="students-in-yale" class="w-full">
             </div> -->
             <div class="p-4 md:p-8 md:w-1/2">
-                <h1 class="text-primary text-h1_m  leading-tight font-bold mb-4">YSA: Where Art Meets Collaboration</h1>
+                <h1 class="text-primary text-h1_m  leading-tight font-bold mb-2">YSA: Where Art Meets Collaboration</h1>
                 <p class="font-medium text-md mb-12">Students from around the world bring diverse perspectives that enrich Yale's artistic community. Through collaboration and interdisciplinary projects, they inspire innovation and artistic breakthroughs.</p>
                 <a href="#" class="cta-1 flex w-fit p-4 text-center text-white text-sm md:text-md bg-accent hover:bg-primary hover:bg-opacity-90 hover:transition-all">Checkout the Student Community</a>
             </div>
@@ -88,9 +91,9 @@
             </a>
         </section> -->
 
-        <section class="news-section flex flex-col items-center gap-4 bg-shade_gray py-4">
+        <section class="news-section flex flex-col items-center gap-8 bg-shade_gray py-4 pb-8">
         <h2 class="text-h1_m md:text-h1 font-semibold text-primary">News</h2>
-            <div class="flex justify-center gap-8 items-centers self-stretch p-4 md:p-12 flex-wrap">
+            <div class="flex justify-center gap-8 items-centers self-stretch px-4 md:px-12 flex-wrap">
                 <div class="content">
                     <div>
                         <div class="image" style="background-image: url(assets/yale-graduation.jpg);"></div>

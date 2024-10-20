@@ -4,7 +4,7 @@
 
 :root{
     --primary-color: rgba(0, 84, 141, 1);
-    --secondary-color: rgba(255, 165, 0, 1);
+    --secondary-color: rgb(255, 170, 0);
     --accent-color: #EC242C;
     --text-color: #18191B;
     --shade-white: rgba(255, 255, 255, 1);
@@ -55,7 +55,7 @@ input[type="search"]::-webkit-search-decoration {
         @apply shadow-md flex flex-col p-8 justify-center items-center;
     }
     .news-section .content{
-        @apply flex flex-col w-full max-w-[380px] pb-6 gap-6 bg-shade_white hover:grayscale transition-all delay-100 ease-in-out;
+        @apply flex flex-col w-full max-w-[380px] pb-6 gap-6 bg-shade_white;
     }
     .news-section .content .image, .course-section .content .image, .event-section .image{
         @apply h-[200px] w-full bg-no-repeat bg-cover bg-center border-b-4 border-secondary;
@@ -80,7 +80,7 @@ input[type="search"]::-webkit-search-decoration {
 
     /* event section */
     .event-section .content{
-        @apply bg-shade_gray w-full max-w-[380px]
+        @apply bg-shade_gray w-full max-w-[380px] h-[516px];
     }
     .event-section .image{
         @apply h-[336px];
